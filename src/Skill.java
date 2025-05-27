@@ -1,6 +1,6 @@
 public class Skill {
-    private String name;
-    private int level;
+    public String name;
+    public int level;
 
     public int SkillLevel(){
         return this.level;
