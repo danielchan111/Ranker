@@ -1,6 +1,6 @@
 public class Skill {
-    String name;
-    int level;
+    private String name;
+    private int level;
 
     public int SkillLevel(){
         return this.level;
@@ -8,6 +8,16 @@ public class Skill {
     public String SkillName(){
         return this.name;
     }
+    public Skill(String newname, int newlevel){
+        this.name = newname;
+        this.level = newlevel;
+    }
+
+    public Skill(String newname){
+        this.name = newname;
+        this.level = 0;
+    }
+
     @Override
     public boolean equals(Object skill){
         if (this == skill) {
